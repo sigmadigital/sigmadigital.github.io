@@ -7,7 +7,7 @@ export default function Hero() {
   const isWidthLargerThanMd = useMediaQuery('(min-width: 768px)')
 
   return (
-    <section className="w-full h-screen flex flex-col justify-center items-center z-0">
+    <section className="w-full min-h-screen md:h-screen flex flex-col justify-center items-center z-0">
       <div className="container flex flex-col-reverse md:grid md:grid-cols-2 max-w-4xl gap-4">
         <div className="p-4 md:p-6 md:pr-3 lg:p-0">
           <div className="text-gray-700 dark:text-green-600 dark:font-semibold mb-2">Hello, my name is</div>
