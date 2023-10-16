@@ -1,4 +1,4 @@
-import { Link } from "@nextui-org/react";
+import { Button, Link } from "@nextui-org/react";
 import { motion } from "framer-motion";
 import Image from 'next/image';
 import { useMediaQuery } from "usehooks-ts";
@@ -7,8 +7,8 @@ export default function Hero() {
   const isWidthLargerThanMd = useMediaQuery('(min-width: 768px)')
 
   return (
-    <section className="w-full h-screen flex flex-col justify-center items-center z-0">
-      <div className="container flex flex-col-reverse md:grid md:grid-cols-2 max-w-4xl gap-4">
+    <section className="w-full min-h-screen md:h-screen flex flex-col md:justify-center md:items-center">
+      <div className="container flex flex-col-reverse md:grid md:grid-cols-2 max-w-4xl md:gap-4">
         <div className="p-4 md:p-6 md:pr-3 lg:p-0">
           <div className="text-gray-700 dark:text-green-600 dark:font-semibold mb-2">Hello, my name is</div>
           <div className="font-extrabold text-gray-800 dark:text-green-400 text-6xl tracking-tighter mb-2">João Victor</div>
@@ -18,6 +18,9 @@ export default function Hero() {
             Currently, I&apos;m focused on designing and architecting enterprise-grade geo-enabled
             solutions at <Link isExternal showAnchorIcon href="https://atos.net/">Atos</Link>.
           </div>
+          <Button color="success" href="#" variant="flat" className="mt-2">
+            Get in touch
+          </Button>
         </div>
         <div className="p-4 md:p-6 md:pl-3 lg:p-0 w-full h-full">
           <motion.div

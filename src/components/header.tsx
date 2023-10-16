@@ -1,9 +1,9 @@
 'use client'
-import { Link, Navbar, NavbarBrand, NavbarContent, NavbarItem } from "@nextui-org/react";
+import { Button, Link, Navbar, NavbarBrand, NavbarContent, NavbarItem } from "@nextui-org/react";
 
 export default function Header() {
   return (
-    <Navbar className="-mt-16">
+    <Navbar className="mt-0 sm:-mt-16">
       <NavbarContent>
         <NavbarBrand>
           <p className="font-bold text-inherit">João Victor</p>
@@ -29,6 +29,11 @@ export default function Header() {
       </NavbarContent>
 
       <NavbarContent justify="end">
+        <NavbarItem>
+          <Button color="success" href="#" variant="flat">
+            Get in touch
+          </Button>
+        </NavbarItem>
       </NavbarContent>
     </Navbar>
   )
