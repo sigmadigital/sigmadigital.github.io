@@ -1,12 +1,15 @@
 'use client'
 import { Button, Link, Navbar, NavbarBrand, NavbarContent, NavbarItem } from "@nextui-org/react";
 
+import { Theme } from "@/components/theme";
 export default function Header() {
+
   return (
     <Navbar className="mt-0 sm:-mt-16">
       <NavbarContent>
         <NavbarBrand>
-          <p className="font-bold text-inherit">João Victor</p>
+          <p className="font-bold text-inherit mr-2">João Victor</p>
+          <Theme />
         </NavbarBrand>
       </NavbarContent>
 

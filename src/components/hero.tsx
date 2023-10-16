@@ -42,6 +42,7 @@ export default function Hero() {
             }}
           >
             <Image
+              priority={false}
               className="h-full w-full aspect-square rounded-xl"
               src="/profile.jpeg"
               width={540}
