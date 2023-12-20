@@ -10,25 +10,25 @@ export default function Skill() {
       "id": 0,
       "icons": <Database size={42} color={green[600]} weight="duotone" />,
       "title": "Geodatabase Architecture",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer bibendum nibh in lacus vehicula"
+      "description": "Effective geodatabase design is crucial for organizing and structuring spatial data in a way that ensures efficiency, integrity, and optimal performance of information retrieval."
     },
     {
       "id": 1,
-      "icons": <MapTrifold size={42} color={green[600]} weight="duotone" />,
-      "title": "Cartography Automation",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer bibendum nibh in lacus vehicula"
+      "icons": <Devices size={42} color={green[600]} weight="duotone" />,
+      "title": "Application Development",
+      "description": "Off-the-shelf applications can only take you so far. Custom applications offer tailored solutions that precisely address unique business needs, providing a competitive advantage."
     },
     {
       "id": 2,
-      "icons": <Devices size={42} color={green[600]} weight="duotone" />,
-      "title": "Application Development",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer bibendum nibh in lacus vehicula"
+      "icons": <MapTrifold size={42} color={green[600]} weight="duotone" />,
+      "title": "Cartography Automation",
+      "description": "Manually designing and printing maps can quickly become a tedious and error-prone process. Leverage cutting-edge cartography automation applications and frameworks to streamline the entire process."
     },
     {
       "id": 3,
       "icons": <Gear size={42} color={green[600]} weight="duotone" />,
       "title": "Geoprocessing Pipeline Design",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer bibendum nibh in lacus vehicula"
+      "description": "Performant, well-designed geoprocessing pipelines derive meaningful insights from geographic information, facilitating informed decision-making."
     }
   ];
 

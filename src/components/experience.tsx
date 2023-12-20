@@ -8,6 +8,7 @@ export default function Experience() {
       "id": 0,
       "logo": "/atos.jfif",
       "title": "Atos",
+      "url": "https://atos.net/en/",
       "from": "11/2022",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer bibendum nibh in lacus vehicula, quis fringilla urna ornare. Sed felis justo, tincidunt nec pulvinar a, imperdiet quis neque."
     },
@@ -15,6 +16,7 @@ export default function Experience() {
       "id": 1,
       "logo": "/imagem.jfif",
       "title": "Imagem Geosistemas",
+      "url": "https://www.img.com.br/pt-br/home",
       "from": "07/2021",
       "to": "11/2022",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer bibendum nibh in lacus vehicula, quis fringilla urna ornare. Sed felis justo, tincidunt nec pulvinar a, imperdiet quis neque."
@@ -23,6 +25,7 @@ export default function Experience() {
       "id": 2,
       "logo": "/kpmg.jfif",
       "title": "KPMG",
+      "url": "https://kpmg.com/br/pt/home.html",
       "from": "11/2020",
       "to": "07/2021",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer bibendum nibh in lacus vehicula, quis fringilla urna ornare. Sed felis justo, tincidunt nec pulvinar a, imperdiet quis neque."
@@ -31,6 +34,7 @@ export default function Experience() {
       "id": 3,
       "logo": "/gt.jfif",
       "title": "GT",
+      "url": "https://youxgroup.com.br/",
       "from": "05/2019",
       "to": "03/2021",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer bibendum nibh in lacus vehicula, quis fringilla urna ornare. Sed felis justo, tincidunt nec pulvinar a, imperdiet quis neque."
@@ -39,6 +43,7 @@ export default function Experience() {
       "id": 4,
       "logo": "/comp_junior.jfif",
       "title": "Comp Júnior",
+      "url": "https://compjunior.com.br/",
       "from": "07/2018",
       "to": "06/2020",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer bibendum nibh in lacus vehicula, quis fringilla urna ornare. Sed felis justo, tincidunt nec pulvinar a, imperdiet quis neque."
@@ -68,13 +73,15 @@ export default function Experience() {
                 delay: 1.25
               }}
             >
-              <Image
-                className="w-full aspect-square rounded-xl shadow-xl dark:shadow-none"
-                src={item.logo}
-                width={50}
-                height={50}
-                alt="Company logo"
-              />
+              <a href={item.url}>
+                <Image
+                  className="w-full aspect-square rounded-xl shadow-xl dark:shadow-none"
+                  src={item.logo}
+                  width={50}
+                  height={50}
+                  alt="Company logo"
+                />
+              </a>
             </motion.div>
             <motion.div
               className="flex-1 ml-4"
@@ -97,7 +104,7 @@ export default function Experience() {
                 from {item.from} {item.to ? `to ${item.to}` : ""}
               </div>
               <div className="font-bold text-gray-700 dark:text-green-500 tracking-tighter text-2xl pb-1 md:pb-2">
-                {item.title}
+                <a href={item.url}>{item.title}</a>
               </div>
               <div className="text-justify">
                 {item.description}
