@@ -15,17 +15,17 @@ export default function Header() {
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link color="foreground" onPress={() => document?.getElementById("hero")?.scrollIntoView()}>
             About me
           </Link>
         </NavbarItem>
         <NavbarItem >
-          <Link color="foreground" href="#">
-            My work
+          <Link color="foreground" onPress={() => document?.getElementById("skill")?.scrollIntoView()}>
+            Skills
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link color="foreground" onPress={() => document?.getElementById("experience")?.scrollIntoView()}>
             Experience
           </Link>
         </NavbarItem>

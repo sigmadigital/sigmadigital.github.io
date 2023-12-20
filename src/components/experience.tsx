@@ -1,4 +1,5 @@
 import { Section } from "@/components/section";
+import { Chip } from "@nextui-org/react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -10,7 +11,8 @@ export default function Experience() {
       "title": "Atos",
       "url": "https://atos.net/en/",
       "from": "11/2022",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer bibendum nibh in lacus vehicula, quis fringilla urna ornare. Sed felis justo, tincidunt nec pulvinar a, imperdiet quis neque."
+      "description": "Delivered high-quality web and desktop applications for some of the world's lagest utility companies. Provided leadership in infrastructure planning for high-availability ArcGIS Enterprise deployments. Collaborated on intense spatial data engineering tasks, delivering coherent governing datasets.",
+      "tags": ["TypeScript", "React", "Python", "C#", "ArcGIS", "Oracle"]
     },
     {
       "id": 1,
@@ -19,7 +21,8 @@ export default function Experience() {
       "url": "https://www.img.com.br/pt-br/home",
       "from": "07/2021",
       "to": "11/2022",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer bibendum nibh in lacus vehicula, quis fringilla urna ornare. Sed felis justo, tincidunt nec pulvinar a, imperdiet quis neque."
+      "description": "Designed high-performance geoprocessing pipelines leveraging the full potential of ArcGIS Enterprise deployments for utility companies and regulatory bodies, minding the latest observability and deployment techniques. Collaborated on web application development facilitating informed decision-making and custom report generation.",
+      "tags": ["TypeScript", "React", "Python", "Java", "ArcGIS", "SQL Server", "Elastic Stack", "Containerization"]
     },
     {
       "id": 2,
@@ -28,7 +31,8 @@ export default function Experience() {
       "url": "https://kpmg.com/br/pt/home.html",
       "from": "11/2020",
       "to": "07/2021",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer bibendum nibh in lacus vehicula, quis fringilla urna ornare. Sed felis justo, tincidunt nec pulvinar a, imperdiet quis neque."
+      "description": "Worked on SAP S/4HANA migrations from ECC deployments for the world's largest sugar-energy company.",
+      "tags": ["SAP", "HANA", "ABAP", "JavaScript", "UI5"]
     },
     {
       "id": 3,
@@ -37,21 +41,13 @@ export default function Experience() {
       "url": "https://youxgroup.com.br/",
       "from": "05/2019",
       "to": "03/2021",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer bibendum nibh in lacus vehicula, quis fringilla urna ornare. Sed felis justo, tincidunt nec pulvinar a, imperdiet quis neque."
-    },
-    {
-      "id": 4,
-      "logo": "/comp_junior.jfif",
-      "title": "Comp Júnior",
-      "url": "https://compjunior.com.br/",
-      "from": "07/2018",
-      "to": "06/2020",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer bibendum nibh in lacus vehicula, quis fringilla urna ornare. Sed felis justo, tincidunt nec pulvinar a, imperdiet quis neque."
+      "description": "Developed several web and mobile mission-critical, geo-enabled applications for government entities and large agricultural companies. Designed cartography pipelines, automating time-consuming legal processes.",
+      "tags": ["JavaScript", "React", "Python", "Java", "ArcGIS", "PostgreSQL", "Swift"]
     }
   ]
 
   return (
-    <Section title="Work experience">
+    <Section title="Work experience" id="experience">
       <div className="relative flex flex-col">
         {data.map((item) =>
           <div key={item.id} className="flex flex-row mb-4 md:mb-6">
@@ -106,8 +102,13 @@ export default function Experience() {
               <div className="font-bold text-gray-700 dark:text-green-500 tracking-tighter text-2xl pb-1 md:pb-2">
                 <a href={item.url}>{item.title}</a>
               </div>
-              <div className="text-justify">
+              <div className="text-justify pb-1">
                 {item.description}
+              </div>
+              <div>
+                {item.tags.map(tag =>
+                  <Chip color="success" variant="flat" className="mr-2">{tag}</Chip>
+                )}
               </div>
             </motion.div>
           </div>
