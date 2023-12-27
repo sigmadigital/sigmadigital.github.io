@@ -41,7 +41,7 @@ export default function Experience() {
       "url": "https://youxgroup.com.br/",
       "from": "05/2019",
       "to": "03/2021",
-      "description": "Developed several web and mobile mission-critical, geo-enabled applications for government entities and large agricultural companies. Designed cartography pipelines, automating time-consuming legal processes.",
+      "description": "Developed several web and mobile mission-critical, geo-enabled applications for government entities and large agricultural companies. Designed cartography and reporting pipelines, automating time-consuming legal processes.",
       "tags": ["JavaScript", "React", "Python", "Java", "ArcGIS", "PostgreSQL", "Swift"]
     }
   ]
@@ -107,7 +107,7 @@ export default function Experience() {
               </div>
               <div>
                 {item.tags.map(tag =>
-                  <Chip color="success" variant="flat" className="mr-2">{tag}</Chip>
+                  <Chip key={tag} color="success" variant="flat" className="mr-2">{tag}</Chip>
                 )}
               </div>
             </motion.div>

@@ -33,7 +33,7 @@ export default function Skill() {
   ];
 
   return (
-    <Section title="What I do" id="skill">
+    <Section title="Skills" id="skill">
       <div className="flex flex-col md:grid md:grid-cols-2 md:gap-4">
         {data.map(item =>
           <motion.div
