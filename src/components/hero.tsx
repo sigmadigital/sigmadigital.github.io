@@ -7,16 +7,17 @@ export default function Hero() {
   const isWidthLargerThanMd = useMediaQuery('(min-width: 768px)')
 
   return (
-    <section className="w-full min-h-screen md:h-screen flex flex-col md:justify-center md:items-center">
+    <section className="w-full min-h-screen md:h-screen flex flex-col md:justify-center md:items-center" id="hero">
       <div className="container flex flex-col-reverse md:grid md:grid-cols-2 max-w-4xl md:gap-4">
         <div className="p-4 md:p-6 md:pr-3 lg:p-0">
           <div className="text-gray-700 dark:text-green-600 dark:font-semibold mb-2">Hello, my name is</div>
           <div className="font-extrabold text-gray-800 dark:text-green-400 text-6xl tracking-tighter mb-2">João Victor</div>
           <div className="font-bold text-gray-600 dark:text-green-500 tracking-tighter text-4xl mb-6">I develop solutions for complex problems.</div>
           <div className="text-justify">
-            Software engineer specialized in developing mission-critical geospatial applications.
-            Currently, I&apos;m focused on designing and architecting enterprise-grade geo-enabled
-            solutions at <Link isExternal showAnchorIcon href="https://atos.net/">Atos</Link>.
+            Software engineer consultant specialized in developing mission-critical geospatial applications.
+            Currently, I&apos;m focused on designing enterprise-grade, geo-enabled
+            solutions at <Link isExternal showAnchorIcon href="https://atos.net/">Atos</Link> for
+            utility companies.
           </div>
           <Button color="success" href="#" variant="flat" className="mt-2">
             Get in touch
