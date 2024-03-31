@@ -107,7 +107,7 @@ export default function Experience() {
               </div>
               <div>
                 {item.tags.map(tag =>
-                  <Chip key={tag} color="success" variant="flat" className="mr-2">{tag}</Chip>
+                  <Chip key={tag} color="success" variant="flat" className="mr-2 mb-1">{tag}</Chip>
                 )}
               </div>
             </motion.div>
