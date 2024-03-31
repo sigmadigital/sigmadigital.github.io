@@ -22,7 +22,10 @@ export default function Hero() {
           </div>
           <div className="flex flex-row">
             <Button isIconOnly color="success" href="https://github.com/teofilosalgado" variant="flat" className="mt-2">
-              <GithubLogo size={32} />
+              <GithubLogo size={28} />
+            </Button>
+            <Button isIconOnly className="ml-4" color="success" href="https://www.linkedin.com/in/teofilosalgado/" variant="flat" className="mt-2">
+              <LinkedinLogo size={28} />
             </Button>
           </div>
         </div>
