@@ -34,7 +34,7 @@ export default function Header() {
 
       <NavbarContent className="hidden lg:flex gap-4" justify="end">
         <NavbarItem>
-          <div className="flex flex-row mt-2">
+          <div className="flex flex-row">
             <Button isIconOnly as={Link} color="success" href="https://github.com/teofilosalgado" variant="flat">
               <GithubLogo size={28} />
             </Button>
