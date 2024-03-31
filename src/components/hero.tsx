@@ -20,14 +20,14 @@ export default function Hero() {
             solutions at <Link isExternal showAnchorIcon href="https://atos.net/">Atos</Link> for
             utility companies.
           </div>
-          <div className="flex flex-row">
-            <Button isIconOnly color="success" href="https://github.com/teofilosalgado" variant="flat" className="mt-2">
+          <div className="flex flex-row mt-2">
+            <Button isIconOnly color="success" href="https://github.com/teofilosalgado" variant="flat">
               <GithubLogo size={28} />
             </Button>
-            <Button isIconOnly className="ml-4" color="success" href="https://www.linkedin.com/in/teofilosalgado/" variant="flat" className="mt-2">
+            <Button isIconOnly className="ml-4" color="success" href="https://www.linkedin.com/in/teofilosalgado/" variant="flat">
               <LinkedinLogo size={28} />
             </Button>
-            <Button isIconOnly className="ml-4" color="success" href="mailto:jvictorteo2000@hotmail.com" variant="flat" className="mt-2">
+            <Button isIconOnly className="ml-4" color="success" href="mailto:jvictorteo2000@hotmail.com" variant="flat">
               <PaperPlaneTilt size={28} />
             </Button>
           </div>
