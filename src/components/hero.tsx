@@ -21,14 +21,14 @@ export default function Hero() {
             utility companies.
           </div>
           <div className="flex flex-row mt-2">
-            <Button isIconOnly color="success" href="https://github.com/teofilosalgado" variant="flat">
-              <GithubLogo size={28} />
+            <Button isIconOnly as={Link} size="md" color="success" href="https://github.com/teofilosalgado" variant="flat">
+              <GithubLogo size={32} />
             </Button>
-            <Button isIconOnly className="ml-4" color="success" href="https://www.linkedin.com/in/teofilosalgado/" variant="flat">
-              <LinkedinLogo size={28} />
+            <Button isIconOnly as={Link} size="md" className="ml-4" color="success" href="https://www.linkedin.com/in/teofilosalgado/" variant="flat">
+              <LinkedinLogo size={32} />
             </Button>
-            <Button isIconOnly className="ml-4" color="success" href="mailto:jvictorteo2000@hotmail.com" variant="flat">
-              <PaperPlaneTilt size={28} />
+            <Button isIconOnly as={Link} size="md" className="ml-4" color="success" href="mailto:jvictorteo2000@hotmail.com" variant="flat">
+              <PaperPlaneTilt size={32} />
             </Button>
           </div>
         </div>
