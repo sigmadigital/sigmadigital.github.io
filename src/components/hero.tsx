@@ -2,6 +2,7 @@ import { Button, Link } from "@nextui-org/react";
 import { motion } from "framer-motion";
 import Image from 'next/image';
 import { useMediaQuery } from "usehooks-ts";
+import { GithubLogo } from "@phosphor-icons/react";
 
 export default function Hero() {
   const isWidthLargerThanMd = useMediaQuery('(min-width: 768px)')
@@ -19,9 +20,11 @@ export default function Hero() {
             solutions at <Link isExternal showAnchorIcon href="https://atos.net/">Atos</Link> for
             utility companies.
           </div>
-          <Button color="success" href="#" variant="flat" className="mt-2">
-            Get in touch
-          </Button>
+          <div className="flex flex-row">
+            <Button isIconOnly color="success" href="https://github.com/teofilosalgado" variant="flat" className="mt-2">
+              <GithubLogo size={32} />
+            </Button>
+          </div>
         </div>
         <div className="p-4 md:p-6 md:pl-3 lg:p-0 w-full h-full">
           <motion.div
