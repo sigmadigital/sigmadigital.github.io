@@ -2,7 +2,7 @@ import { Button, Link } from "@nextui-org/react";
 import { motion } from "framer-motion";
 import Image from 'next/image';
 import { useMediaQuery } from "usehooks-ts";
-import { GithubLogo } from "@phosphor-icons/react";
+import { GithubLogo, LinkedinLogo, PaperPlaneTilt } from "@phosphor-icons/react";
 
 export default function Hero() {
   const isWidthLargerThanMd = useMediaQuery('(min-width: 768px)')
@@ -26,6 +26,9 @@ export default function Hero() {
             </Button>
             <Button isIconOnly className="ml-4" color="success" href="https://www.linkedin.com/in/teofilosalgado/" variant="flat" className="mt-2">
               <LinkedinLogo size={28} />
+            </Button>
+            <Button isIconOnly className="ml-4" color="success" href="mailto:jvictorteo2000@hotmail.com" variant="flat" className="mt-2">
+              <PaperPlaneTilt size={28} />
             </Button>
           </div>
         </div>
