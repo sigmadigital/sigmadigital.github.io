@@ -19,6 +19,9 @@ export function Theme() {
     <Switch
       size="lg"
       color="success"
+      role="switch"
+      aria-label="Change theme"
+      aria-checked={theme === "light" ? "true" : "false"}
       startContent={<Sun />}
       endContent={<Moon />}
       isSelected={theme === "light"}

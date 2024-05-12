@@ -43,12 +43,12 @@ export default function Header() {
           </Button>
         </NavbarItem>
         <NavbarItem>
-          <Button isIconOnly as={Link} className="ml-4" color="success" href="https://www.linkedin.com/in/teofilosalgado/" aria-label="LinkedIn link" variant="flat">
+          <Button isIconOnly as={Link} color="success" href="https://www.linkedin.com/in/teofilosalgado/" aria-label="LinkedIn link" variant="flat">
             <LinkedinLogo size={28} />
           </Button>
         </NavbarItem>
         <NavbarItem>
-          <Button isIconOnly as={Link} className="ml-4" color="success" href="mailto:jvictorteo2000@hotmail.com" aria-label="Send an e-mail" variant="flat">
+          <Button isIconOnly as={Link} color="success" href="mailto:jvictorteo2000@hotmail.com" aria-label="Send an e-mail" variant="flat">
             <PaperPlaneTilt size={28} />
           </Button>
         </NavbarItem>
