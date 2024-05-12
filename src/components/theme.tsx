@@ -19,7 +19,7 @@ export function Theme() {
     <Switch
       size="lg"
       color="success"
-      role="switch"
+      role="checkbox"
       aria-label="Change theme"
       aria-checked={theme === "light" ? "true" : "false"}
       startContent={<Sun />}

@@ -7,7 +7,7 @@ export default function Experience() {
   const data = [
     {
       "id": 0,
-      "logo": "/atos.jfif",
+      "logo": "/atos.avif",
       "title": "Atos",
       "url": "https://atos.net/en/",
       "from": "11/2022",
@@ -16,7 +16,7 @@ export default function Experience() {
     },
     {
       "id": 1,
-      "logo": "/imagem.jfif",
+      "logo": "/imagem.avif",
       "title": "Imagem Geosistemas",
       "url": "https://www.img.com.br/pt-br/home",
       "from": "07/2021",
@@ -26,7 +26,7 @@ export default function Experience() {
     },
     {
       "id": 2,
-      "logo": "/kpmg.jfif",
+      "logo": "/kpmg.avif",
       "title": "KPMG",
       "url": "https://kpmg.com/br/pt/home.html",
       "from": "11/2020",
@@ -36,7 +36,7 @@ export default function Experience() {
     },
     {
       "id": 3,
-      "logo": "/gt.jfif",
+      "logo": "/gt.avif",
       "title": "GT",
       "url": "https://youxgroup.com.br/",
       "from": "05/2019",
@@ -73,8 +73,8 @@ export default function Experience() {
                 <Image
                   className="w-full aspect-square rounded-xl shadow-xl dark:shadow-none"
                   src={item.logo}
-                  width={50}
-                  height={50}
+                  width={64}
+                  height={64}
                   alt="Company logo"
                 />
               </a>
