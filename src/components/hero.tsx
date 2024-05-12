@@ -21,13 +21,13 @@ export default function Hero() {
             utility companies.
           </div>
           <div className="flex flex-row mt-2">
-            <Button isIconOnly as={Link} size="lg" color="success" href="https://github.com/teofilosalgado" variant="flat">
+            <Button isIconOnly as={Link} size="lg" color="success" href="https://github.com/teofilosalgado" aria-label="Github link" variant="flat">
               <GithubLogo size={32} />
             </Button>
-            <Button isIconOnly as={Link} size="lg" className="ml-4" color="success" href="https://www.linkedin.com/in/teofilosalgado/" variant="flat">
+            <Button isIconOnly as={Link} size="lg" className="ml-4" color="success" href="https://www.linkedin.com/in/teofilosalgado/" aria-label="LinkedIn link" variant="flat">
               <LinkedinLogo size={32} />
             </Button>
-            <Button isIconOnly as={Link} size="lg" className="ml-4" color="success" href="mailto:jvictorteo2000@hotmail.com" variant="flat">
+            <Button isIconOnly as={Link} size="lg" className="ml-4" color="success" href="mailto:jvictorteo2000@hotmail.com" aria-label="Send an e-mail" variant="flat">
               <PaperPlaneTilt size={32} />
             </Button>
           </div>
@@ -54,7 +54,7 @@ export default function Hero() {
             <Image
               priority={false}
               className="h-full w-full aspect-square rounded-xl"
-              src="/profile.jpeg"
+              src="/profile.avif"
               width={540}
               height={540}
               alt="Picture of the author"

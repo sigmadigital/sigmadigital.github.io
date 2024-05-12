@@ -12,7 +12,7 @@ export default function Experience() {
       "url": "https://atos.net/en/",
       "from": "11/2022",
       "description": "Delivered high-quality web and desktop applications for some of the world's lagest utility companies. Provided leadership in infrastructure planning for high-availability ArcGIS Enterprise deployments. Collaborated on intense spatial data engineering tasks, delivering coherent governing datasets.",
-      "tags": ["TypeScript", "React", "Python", "C#", "ArcGIS", "Oracle"]
+      "tags": ["TypeScript", "React", "Python", "C#", "ArcGIS", "Oracle", "FME"]
     },
     {
       "id": 1,
