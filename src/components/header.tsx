@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import { Button, Link, Navbar, NavbarBrand, NavbarContent, NavbarItem } from "@nextui-org/react";
 import { GithubLogo, LinkedinLogo, PaperPlaneTilt } from "@phosphor-icons/react";
 
@@ -34,6 +34,11 @@ export default function Header() {
             Work Experience
           </Link>
         </NavbarItem>
+        <NavbarItem>
+          <Link className="cursor-pointer" color="foreground" underline="hover" aria-label="Scroll to projects" onPress={() => document?.getElementById("project")?.scrollIntoView()}>
+            Projects
+          </Link>
+        </NavbarItem>
       </NavbarContent>
 
       <NavbarContent className="hidden lg:flex gap-4" justify="end">
@@ -54,5 +59,5 @@ export default function Header() {
         </NavbarItem>
       </NavbarContent>
     </Navbar>
-  )
+  );
 }
