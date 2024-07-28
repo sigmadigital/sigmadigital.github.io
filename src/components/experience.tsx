@@ -96,15 +96,15 @@ export default function Experience() {
                 delay: 1
               }}
             >
-              <div className="text-gray-600 dark:text-green-700 text-sm pb-1">
+              <div className="text-gray-600 dark:text-green-700 dark:font-semibold text-sm pb-1">
                 from {item.from} {item.to ? `to ${item.to}` : ""}
               </div>
               <div className="font-bold text-gray-700 dark:text-green-500 tracking-tighter text-2xl pb-1 md:pb-2">
                 <a href={item.url}>{item.title}</a>
               </div>
-              <div className="text-justify pb-1">
+              <p className="text-justify pb-1">
                 {item.description}
-              </div>
+              </p>
               <div>
                 {item.tags.map(tag =>
                   <Chip key={tag} color="success" variant="flat" className="mr-2 mb-1">{tag}</Chip>

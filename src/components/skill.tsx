@@ -8,25 +8,25 @@ export default function Skill() {
   const data = [
     {
       "id": 0,
-      "icons": <Database size={42} color={green[600]} weight="duotone" />,
+      "icon": <Database size={42} color={green[600]} weight="duotone" />,
       "title": "Geodatabase Architecture",
       "description": "Effective geodatabase design is crucial for organizing and structuring spatial data in a way that ensures efficiency, integrity, and optimal performance of information retrieval."
     },
     {
       "id": 1,
-      "icons": <Devices size={42} color={green[600]} weight="duotone" />,
+      "icon": <Devices size={42} color={green[600]} weight="duotone" />,
       "title": "Application Development",
       "description": "Off-the-shelf applications can only take you so far. Custom applications offer tailored solutions that precisely address unique business needs, providing a competitive advantage."
     },
     {
       "id": 2,
-      "icons": <MapTrifold size={42} color={green[600]} weight="duotone" />,
+      "icon": <MapTrifold size={42} color={green[600]} weight="duotone" />,
       "title": "Cartography Automation",
       "description": "Manually designing and printing maps can quickly become a tedious and error-prone process. Leverage cutting-edge cartography automation applications and frameworks to streamline the entire process."
     },
     {
       "id": 3,
-      "icons": <Gear size={42} color={green[600]} weight="duotone" />,
+      "icon": <Gear size={42} color={green[600]} weight="duotone" />,
       "title": "Geoprocessing Pipeline Design",
       "description": "Performant, well-designed geoprocessing pipelines derive meaningful insights from geographic information, facilitating informed decision-making."
     }
@@ -56,9 +56,9 @@ export default function Skill() {
           >
             <Card className="mb-4 md:mb-0">
               <CardHeader className="flex gap-3">
-                {item.icons}
-                <div className="flex flex-col">
-                  <p className="text-md">{item.title}</p>
+                {item.icon}
+                <div className="flex flex-col text-lg font-semibold">
+                  {item.title}
                 </div>
               </CardHeader>
               <Divider />
