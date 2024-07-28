@@ -66,7 +66,7 @@ export default function Repository({ icon, name, id }: RepositoryProps) {
           <div className="flex items-start space-x-4 text-small">
             <SmileySad size={64} color={green[600]} />
             <div className="flex-1 ml-4">
-              <p className="text-justify">Couldn't retrive data for the repository {name}.</p>
+              <p className="text-justify">Couldn&apos;t retrive data for the repository {name}.</p>
             </div>
           </div>
         </CardBody>
@@ -107,8 +107,8 @@ export default function Repository({ icon, name, id }: RepositoryProps) {
               </div>
             </div>
             <div className="flex items-center mt-2">
-              {data?.languages.map(language => (
-                <Chip color="success" variant="flat" className="mr-2 mb-1">{language}</Chip>
+              {data?.languages.map((language, index) => (
+                <Chip key={index} color="success" variant="flat" className="mr-2 mb-1">{language}</Chip>
               ))}
             </div>
           </CardBody>
