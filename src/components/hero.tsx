@@ -5,7 +5,7 @@ import { useMediaQuery } from "usehooks-ts";
 import { GithubLogo, LinkedinLogo, PaperPlaneTilt } from "@phosphor-icons/react";
 
 export default function Hero() {
-  const isWidthLargerThanMd = useMediaQuery('(min-width: 768px)')
+  const isWidthLargerThanMd = useMediaQuery('(min-width: 768px)');
 
   return (
     <section className="w-full min-h-screen md:h-screen flex flex-col md:justify-center md:items-center" id="hero">
@@ -52,7 +52,7 @@ export default function Hero() {
             }}
           >
             <Image
-              priority={false}
+              priority={true}
               className="h-full w-full aspect-square rounded-xl"
               src="/profile.avif"
               width={540}
@@ -62,5 +62,5 @@ export default function Hero() {
           </motion.div>
         </div>
       </div>
-    </section>)
+    </section>);
 }

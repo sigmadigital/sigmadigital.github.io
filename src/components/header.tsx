@@ -13,6 +13,9 @@ export default function Header() {
             <p className="font-bold text-inherit mr-2">João Victor</p>
           </NavbarBrand>
         </NavbarItem>
+        <NavbarItem className="flex-1 md:hidden">
+
+        </NavbarItem>
         <NavbarItem>
           <Theme />
         </NavbarItem>

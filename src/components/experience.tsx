@@ -37,14 +37,14 @@ export default function Experience() {
     {
       "id": 3,
       "logo": "/gt.avif",
-      "title": "GT",
+      "title": "Global Technologies",
       "url": "https://youxgroup.com.br/",
       "from": "05/2019",
       "to": "03/2021",
       "description": "Developed several web and mobile mission-critical, geo-enabled applications for government entities and large agricultural companies. Designed cartography and reporting pipelines, automating time-consuming legal processes.",
       "tags": ["JavaScript", "React", "Python", "Java", "ArcGIS", "PostgreSQL", "Swift"]
     }
-  ]
+  ];
 
   return (
     <Section title="Work experience" id="experience">
@@ -133,5 +133,5 @@ export default function Experience() {
         />
       </div>
     </Section>
-  )
+  );
 }

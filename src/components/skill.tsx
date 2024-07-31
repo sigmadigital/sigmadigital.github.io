@@ -62,13 +62,13 @@ export default function Skill() {
                 </div>
               </CardHeader>
               <Divider />
-              <CardBody>
-                <p>{item.description}</p>
+              <CardBody className="md:px-6 md:pb-6">
+                <p className="text-justify text-small md:text-medium">{item.description}</p>
               </CardBody>
             </Card>
           </motion.div>
         )}
       </div>
     </Section>
-  )
+  );
 }
