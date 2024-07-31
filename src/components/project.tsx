@@ -5,6 +5,7 @@ import { Books, MoonStars, Network, Planet } from "@phosphor-icons/react";
 import { green } from "tailwindcss/colors";
 import Repository from "@/components/repository";
 import { Link } from "@nextui-org/react";
+import { useTheme } from "next-themes";
 
 
 export default function Skill() {
@@ -27,6 +28,8 @@ export default function Skill() {
     }
   ];
 
+  const { theme } = useTheme();
+
   return (
     <Section title="Projects" id="project">
       <div>
@@ -43,10 +46,10 @@ export default function Skill() {
             isExternal
             showAnchorIcon
             href="https://github.com/teofilosalgado"
-            aria-label="Github link"
-            color="success"
+            aria-label="Visit my Github profile"
+            className={`text-lg ${theme === "dark" ? "text-green-400" : "text-green-800"}`}
           >
-            But there are many more to be found in my GitHub profile
+            Check out my GitHub profile for more awesome projects
           </Link>
         </div>
       </div>
